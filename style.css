@@ -66,6 +66,8 @@ h1 {
     max-height: 0;
     overflow: hidden;
     position: relative;
+    font-size: .9rem;
+
     transition: max-height 650ms;
 }
 
@@ -78,9 +80,11 @@ h1 {
 .according-item:target .according-link .fa-chevron-down {
     display: none;
 }
+
 .according-item:target .according-link .fa-chevron-up {
     display: block;
 }
+
 @media (min-width: 412px) {
     body {
         background: linear-gradient(var(--cl-primary-gradientbgc-sviolet), var(--cl-primary-gradientbgc-sblue));
@@ -125,14 +129,17 @@ h1 {
         height: 90%;
         transform:translateY(-50%);
     }
+
     .according-item:target .according-link {
         color: var(--cl-neutral-text-vdgrayblue);
         font-weight: 700;
 
     }
+
     .according-item:target .according-answer-text {
         max-height: 20rem;
     }
+
     .according-item:target .according-link .fa-chevron-down {
         display: none;
     }
