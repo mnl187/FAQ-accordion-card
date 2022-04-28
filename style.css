@@ -69,9 +69,14 @@ h1 {
     transition: max-height 650ms;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 390px) {
     body {
         background: linear-gradient(var(--cl-primary-gradientbgc-sviolet), var(--cl-primary-gradientbgc-sblue));
+    }
+
+    .box {
+        width: 22rem;
+        height: 37rem;
     }
 
     .box-img {
@@ -80,12 +85,7 @@ h1 {
         background-size: 70%, 70%;
         height: 35%;
         width: 100%;
-        top: -18%;
-    }
-
-    .box {
-        width: 17rem;
-        height: 30rem;
+        top: -19%;
     }
 
     h1 {
@@ -94,13 +94,14 @@ h1 {
 
     .according-item {
         margin: .3rem .7rem;
-        font-size: .7rem;
-        line-height: 2.8rem;
+        font-size: 1rem;
+        line-height: 3rem;
         border-bottom: var(--cl-neutral-text-dgrayblue) .2px solid;
     }
 
     .according-answer-text {
-        line-height: 1rem;
+        line-height: 1.1rem;
+        margin-bottom: 10px;
     }
 
     .according-answer-text::before {
