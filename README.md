@@ -1,5 +1,7 @@
 # Frontend Mentor - FAQ accordion card
 
+https://m-faq-accordion-card.netlify.app/
+
 ![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
