@@ -144,3 +144,65 @@ h1 {
         display: none;
     }
 }
+@media (min-width: 1440px) {
+    body {
+        background: linear-gradient(var(--cl-primary-gradientbgc-sviolet), var(--cl-primary-gradientbgc-sblue));
+    }
+
+    .box {
+        width: 70rem;
+        height: 40rem;
+        /*display: grid;*/
+
+    }
+
+    .box-img {
+        position: fixed;
+        background: url("images/illustration-box-desktop.svg") no-repeat center, url("images/illustration-woman-online-desktop.svg") no-repeat center;
+        background-size: 90%, 90%;
+        height: 100%;
+        width: 30%;
+        left: -10%;
+        top : 0;
+    }
+
+    h1 {
+        padding: 5.5rem 0 .5rem 0;
+    }
+
+    .according-item {
+        margin: 0 1rem;
+        font-size: 1.1rem;
+        line-height: 3rem;
+        border-bottom: var(--cl-neutral-text-dgrayblue) .2px solid;
+    }
+
+    .according-answer-text {
+        line-height: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .according-answer-text::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        width: .6rem;
+        height: 90%;
+        transform:translateY(-50%);
+    }
+
+    .according-item:target .according-link {
+        color: var(--cl-neutral-text-vdgrayblue);
+        font-weight: 700;
+
+    }
+
+    .according-item:target .according-answer-text {
+        max-height: 20rem;
+    }
+
+    .according-item:target .according-link .fa-chevron-down {
+        display: none;
+    }
+}
