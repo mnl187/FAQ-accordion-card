@@ -69,6 +69,18 @@ h1 {
     transition: max-height 650ms;
 }
 
+.according-item:target .according-link {
+    color: var(--cl-neutral-text-vdgrayblue);
+    font-weight: 700;
+
+}
+
+.according-item:target .according-link .fa-chevron-down {
+    display: none;
+}
+.according-item:target .according-link .fa-chevron-up {
+    display: block;
+}
 @media (min-width: 412px) {
     body {
         background: linear-gradient(var(--cl-primary-gradientbgc-sviolet), var(--cl-primary-gradientbgc-sblue));
@@ -93,7 +105,7 @@ h1 {
     }
 
     .according-item {
-        margin: 0 .7rem;
+        margin: 0 1rem;
         font-size: 1.1rem;
         line-height: 3rem;
         border-bottom: var(--cl-neutral-text-dgrayblue) .2px solid;
@@ -123,8 +135,5 @@ h1 {
     }
     .according-item:target .according-link .fa-chevron-down {
         display: none;
-    }
-    .according-item:target .according-link .fa-chevron-up {
-        display: block;
     }
 }
