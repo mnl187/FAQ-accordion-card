@@ -6,7 +6,6 @@
     --cl-neutral-text-vdgrayblue: hsl(237, 12%, 33%);
     --cl-neutral-text-dgrayblue: hsl(240, 6%, 50%);
     --cl-neutral-div-lgrayblue: hsl(240, 5%, 91%);
-
 }
 
 .attribution {
@@ -32,42 +31,35 @@ html {
 }
 
 .box {
-
     background-color: var(--cl-neutral-div-lgrayblue);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*display: grid;*/
-    /*grid-template-rows: 1fr 2fr;*/
     border-radius: 25px;
     text-align: center;
-
 }
 
 h1 {
     text-transform: uppercase;
-
 }
 
 .according-link {
     text-decoration: none;
     text-align: left;
     color: var(--cl-neutral-text-vdgrayblue);
-    /*width: 100%;*/
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    }
-.according-item .fas {
-    /*display: block;*/
-    float: right;
-    /*right: 10px;*/
-    margin: 1rem 0;
-    font-size: .7rem;
+}
 
+.according-link i {
     color: var(--cl-primary-text-sred);
+}
 
+.according-link .fa-chevron-up {
+    display: none;
 }
 
 .according-answer-text {
@@ -75,11 +67,6 @@ h1 {
     overflow: hidden;
     position: relative;
     transition: max-height 650ms;
-
-}
-
-.according-item:target .according-answer-text {
-    max-height: 20rem;
 }
 
 @media (min-width: 375px) {
@@ -91,7 +78,7 @@ h1 {
         position: absolute;
         background: url("images/illustration-woman-online-mobile.svg") no-repeat top, url("images/bg-pattern-mobile.svg") no-repeat center 80px;
         background-size: 70%, 70%;
-        height: 100%;
+        height: 35%;
         width: 100%;
         top: -18%;
     }
@@ -99,7 +86,6 @@ h1 {
     .box {
         width: 17rem;
         height: 30rem;
-
     }
 
     h1 {
@@ -113,5 +99,31 @@ h1 {
         border-bottom: var(--cl-neutral-text-dgrayblue) .2px solid;
     }
 
+    .according-answer-text {
+        line-height: 1rem;
+    }
 
+    .according-answer-text::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        width: .6rem;
+        height: 90%;
+        transform:translateY(-50%);
+    }
+    .according-item:target .according-link {
+        color: var(--cl-neutral-text-vdgrayblue);
+        font-weight: 700;
+
+    }
+    .according-item:target .according-answer-text {
+        max-height: 20rem;
+    }
+    .according-item:target .according-link .fa-chevron-down {
+        display: none;
+    }
+    .according-item:target .according-link .fa-chevron-up {
+        display: block;
+    }
 }
