@@ -89,11 +89,11 @@ h1 {
     }
 
     h1 {
-        padding: 7rem 0 2rem 0;
+        padding: 5.5rem 0 .5rem 0;
     }
 
     .according-item {
-        margin: .3rem .7rem;
+        margin: 0 .7rem;
         font-size: 1.125rem;
         line-height: 3rem;
         border-bottom: var(--cl-neutral-text-dgrayblue) .2px solid;
