@@ -94,13 +94,13 @@ h1 {
 
     .according-item {
         margin: .3rem .7rem;
-        font-size: 1.1rem;
+        font-size: 1.150rem;
         line-height: 3rem;
         border-bottom: var(--cl-neutral-text-dgrayblue) .2px solid;
     }
 
     .according-answer-text {
-        line-height: 1.1rem;
+        line-height: 1.3rem;
         margin-bottom: 10px;
     }
 
