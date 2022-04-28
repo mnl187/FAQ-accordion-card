@@ -69,14 +69,14 @@ h1 {
     transition: max-height 650ms;
 }
 
-@media (min-width: 390px) {
+@media (min-width: 412px) {
     body {
         background: linear-gradient(var(--cl-primary-gradientbgc-sviolet), var(--cl-primary-gradientbgc-sblue));
     }
 
     .box {
-        width: 22rem;
-        height: 37rem;
+        width: 24rem;
+        height: 40rem;
     }
 
     .box-img {
@@ -89,12 +89,12 @@ h1 {
     }
 
     h1 {
-        padding-top: 5rem;
+        padding: 7rem 0 2rem 0;
     }
 
     .according-item {
         margin: .3rem .7rem;
-        font-size: 1rem;
+        font-size: 1.1rem;
         line-height: 3rem;
         border-bottom: var(--cl-neutral-text-dgrayblue) .2px solid;
     }
