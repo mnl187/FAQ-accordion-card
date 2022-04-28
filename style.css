@@ -1,0 +1,117 @@
+:root {
+    --cl-primary-text-dblue: hsl(238, 29%, 16%);
+    --cl-primary-text-sred: hsl(14, 88%, 65%);
+    --cl-primary-gradientbgc-sviolet: hsl(273, 75%, 66%);
+    --cl-primary-gradientbgc-sblue: hsl(240, 73%, 65%);
+    --cl-neutral-text-vdgrayblue: hsl(237, 12%, 33%);
+    --cl-neutral-text-dgrayblue: hsl(240, 6%, 50%);
+    --cl-neutral-div-lgrayblue: hsl(240, 5%, 91%);
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100%;
+}
+
+.box {
+
+    background-color: var(--cl-neutral-div-lgrayblue);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*display: grid;*/
+    /*grid-template-rows: 1fr 2fr;*/
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+h1 {
+    text-transform: uppercase;
+
+}
+
+.according-link {
+    text-decoration: none;
+    text-align: left;
+    color: var(--cl-neutral-text-vdgrayblue);
+    /*width: 100%;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+.according-item .fas {
+    /*display: block;*/
+    float: right;
+    /*right: 10px;*/
+    margin: 1rem 0;
+    font-size: .7rem;
+
+    color: var(--cl-primary-text-sred);
+
+}
+
+.according-answer-text {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 650ms;
+
+}
+
+.according-item:target .according-answer-text {
+    max-height: 20rem;
+}
+
+@media (min-width: 375px) {
+    body {
+        background: linear-gradient(var(--cl-primary-gradientbgc-sviolet), var(--cl-primary-gradientbgc-sblue));
+    }
+
+    .box-img {
+        position: absolute;
+        background: url("images/illustration-woman-online-mobile.svg") no-repeat top, url("images/bg-pattern-mobile.svg") no-repeat center 80px;
+        background-size: 70%, 70%;
+        height: 100%;
+        width: 100%;
+        top: -18%;
+    }
+
+    .box {
+        width: 17rem;
+        height: 30rem;
+
+    }
+
+    h1 {
+        padding-top: 5rem;
+    }
+
+    .according-item {
+        margin: .3rem .7rem;
+        font-size: .7rem;
+        line-height: 2.8rem;
+        border-bottom: var(--cl-neutral-text-dgrayblue) .2px solid;
+    }
+
+
+}
