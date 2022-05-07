@@ -85,27 +85,28 @@ h1 {
     display: block;
 }
 
-@media (min-width: 412px) {
+@media (min-width: 390px) {
     body {
         background: linear-gradient(var(--cl-primary-gradientbgc-sviolet), var(--cl-primary-gradientbgc-sblue));
     }
 
     .box {
         width: 24rem;
-        height: 40rem;
+        height: 35rem;
     }
 
     .box-img {
         position: absolute;
         background: url("images/illustration-woman-online-mobile.svg") no-repeat top, url("images/bg-pattern-mobile.svg") no-repeat center 80px;
         background-size: 70%, 70%;
-        height: 35%;
+        height: 38%;
         width: 100%;
-        top: -19%;
+        top: -22%;
     }
 
     h1 {
-        padding: 5.5rem 0 .5rem 0;
+        margin-top: 6rem;
+        padding: 0 0 .5rem 0;
     }
 
     .according-item {
